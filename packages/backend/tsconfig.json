@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "esnext",
+    "lib": ["es2015", "es2016", "es2017", "es2018","ES2019", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "typeRoots": ["./@types","./node_modules/@types"],
+    "baseUrl": "./",
+    "alwaysStrict": true,
+    "paths": {
+      "*": ["./@types/*"],
+      "express-session": ["./@types/session.d.ts"]
+    },
+    "strict": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["**/node_modules", "**/build"]
+}
